@@ -112,6 +112,14 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Full Width", 
+            "value": "full-width"
+          },
+          {
+            "name": "Center",
+            "value": "center"
           }
         ]
       }
