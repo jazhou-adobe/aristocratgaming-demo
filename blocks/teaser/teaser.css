@@ -70,10 +70,10 @@
   box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
 }
 
-#explore-games a {
+h6 a {
   display: inline-block;
   padding: 12px 24px;
-  color: #fff;
+  color: #fff!important;
   border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
@@ -88,7 +88,7 @@
   background-color: #2bc1fd;
 }
 
-#explore-games a:hover {
+h6 a:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
 }
