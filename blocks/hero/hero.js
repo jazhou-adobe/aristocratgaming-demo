@@ -1,11 +1,8 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
-
 export default function decorate(block) {
   // Add classes to hero sections
   const [backgroundDiv, imageDiv, contentDiv] = block.children;
   backgroundDiv.classList.add('hero-background');
-  imageDiv.classList.add('hero-image'); 
+  imageDiv.classList.add('hero-image');
   contentDiv.classList.add('hero-content');
 
   // Create button container
@@ -27,5 +24,4 @@ export default function decorate(block) {
   // Add buttons to container
   buttonContainer.append(whereToPlayBtn, learnMoreBtn);
   contentDiv.append(buttonContainer);
-
 }
