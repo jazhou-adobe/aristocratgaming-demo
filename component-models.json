@@ -171,6 +171,13 @@
       {
         "component": "reference",
         "valueType": "string",
+        "name": "backgroundImage",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
         "name": "image",
         "label": "Image",
         "multi": false
