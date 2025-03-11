@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  background-image: linear-gradient(90deg, #300c46 0%, #2d2e83 100%);
 }
 
 header nav {
@@ -18,7 +19,8 @@ header nav {
   max-width: 1248px;
   height: var(--nav-height);
   padding: 0 24px;
-  font-family: var(--body-font-family);
+  font-family: var(--heading-font-family);
+  color: #fff;
 }
 
 header nav[aria-expanded='true'] {
@@ -139,7 +141,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 header .nav-brand {
   grid-area: brand;
   flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
+  font-size: var(--heading-font-size-m);
   font-weight: 700;
   line-height: 1;
 }
@@ -166,7 +168,7 @@ header nav[aria-expanded='true'] .nav-sections {
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
-  font-size: var(--body-font-size-s);
+  font-size: var(--body-font-size-m);
 }
 
 header nav .nav-sections ul > li {
