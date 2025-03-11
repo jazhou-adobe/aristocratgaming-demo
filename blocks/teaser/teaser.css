@@ -1,6 +1,96 @@
 .teaser-wrapper {
-  background-color: #fff;
   background-image: linear-gradient(90deg, #300c46 0%, #2d2e83 100%);
+}
+
+
+.teaser {
+  max-height: 420px;
+  max-width: 1540px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+
+.teaser .teaser-image {
+  width: 60%;
+}
+
+.teaser .teaser-image img {
+  width: 100%;
+  height: 400px;
+
+}
+
+.teaser .teaser-content {
+  width: 40%;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.teaser .teaser-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  opacity: 0.8;
+  color: #2bc1fd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "CircularXX Book", sans-serif;
+}
+
+.teaser .teaser-title {
+  font-size: 2.5rem;
+  margin: 0 0 16px;
+}
+
+.teaser .teaser-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 24px;
+  opacity: 0.8;
+}
+
+.teaser .teaser-link {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+}
+
+.teaser .teaser-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
+}
+
+#explore-games a {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  box-shadow: 0 2px 4px  rgb(0 0 0 / 20%);
+  text-decoration: none;
+  font-family: "Sugo Pro Display", sans-serif;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #2bc1fd;
+}
+
+#explore-games a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
 }
 
 

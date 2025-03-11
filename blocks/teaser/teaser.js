@@ -1,30 +1,29 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
-
 export default function decorate(block) {
-  // Add teaser-image class to image container div
+  // Add teaser__image class to image container
   const imageDiv = block.querySelector('div > div:first-child');
   if (imageDiv) {
     imageDiv.classList.add('teaser-image');
-    // Optimize images
-    imageDiv.querySelectorAll('picture > img').forEach((img) => {
-      const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [
-        { width: '1360' },
-      ]);
-      moveInstrumentation(img, optimizedPic.querySelector('img'));
-      img.closest('picture').replaceWith(optimizedPic);
-    });
   }
 
-  // Add teaser-content class to content container div
-  const contentDiv = block.querySelector('div:nth-child(2) > div');
+  // Add teaser__content class and style content section
+  const contentDiv = block.querySelector('div:nth-child(2)');
   if (contentDiv) {
     contentDiv.classList.add('teaser-content');
-  }
 
-  // Add teaser-navlist class to navigation list container div
-  const navListDiv = block.querySelector('div:nth-child(3) > div');
-  if (navListDiv) {
-    navListDiv.classList.add('teaser-navlist');
+    // Add classes to content elements
+    const subtitle = contentDiv.querySelector('h4');
+    if (subtitle) {
+      subtitle.classList.add('teaser-subtitle');
+    }
+
+    const title = contentDiv.querySelector('h3');
+    if (title) {
+      title.classList.add('teaser-title');
+    }
+
+    const description = contentDiv.querySelector('p');
+    if (description) {
+      description.classList.add('teaser-description');
+    }
   }
 }
