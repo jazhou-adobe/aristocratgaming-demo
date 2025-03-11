@@ -1,11 +1,11 @@
 .teaser-wrapper {
   background-image: linear-gradient(90deg, #300c46 0%, #2d2e83 100%);
+  max-width: 1540px!important;
+  max-height: 400px!important;
+  padding: 0 !important;
 }
 
-
 .teaser {
-  max-height: 420px;
-  max-width: 1540px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -41,8 +41,10 @@
 }
 
 .teaser .teaser-title {
-  font-size: 2.5rem;
-  margin: 0 0 16px;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .teaser .teaser-description {
@@ -70,10 +72,10 @@
   box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
 }
 
-#explore-games a {
+h6 a {
   display: inline-block;
   padding: 12px 24px;
-  color: #fff;
+  color: #fff!important;
   border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
@@ -88,7 +90,7 @@
   background-color: #2bc1fd;
 }
 
-#explore-games a:hover {
+h6 a:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
 }

@@ -1,23 +1,62 @@
+.cards-container .cards-wrapper {
+  max-width: unset;
+  padding: 0 !important;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(770px, 1fr));
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  background-color: #2bc1fd;
+  text-align: center;
+  margin:0!important;
 }
+
+.cards .cards-card-body h1 {
+  font-family: "Sugo Pro Display", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 24px;
+  margin: 0;
+}
+
+.cards .cards-card-body a {
+  font-family: "Sugo Pro Display", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cards .cards-card-body a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
+}
+
+.cards .cards-card-body p {
+  visibility: hidden;
+  height: 0;
+}
+
 
 .cards .cards-card-image {
   line-height: 0;
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
 
 .cards > ul > li img {
