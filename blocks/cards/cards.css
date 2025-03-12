@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(770px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
 }
 
 .cards > ul > li {
